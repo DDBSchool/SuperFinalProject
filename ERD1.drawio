@@ -1,0 +1,30 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.1.1">
+  <diagram name="Entity Relationship Diagram" id="k3qnj9bO6XWQnK3D4ov2">
+    <mxGraphModel dx="786" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="users" style="swimlane;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="130" width="210" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="id (PK): INT UNSIGNED&#xa;username: VARCHAR(50) UNIQUE&#xa;password_hash: VARCHAR(255)&#xa;created_at: DATETIME" style="text;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" parent="2" vertex="1">
+          <mxGeometry y="30" width="210" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="typing_results" style="swimlane;html=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="105" width="230" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="id (PK): INT UNSIGNED&#xa;user_id (FK): INT UNSIGNED&#xa;level: INT&#xa;score: INT&#xa;accuracy: DECIMAL(5,2)&#xa;words_per_second: DECIMAL(6,3)&#xa;type: ENUM(&#39;ranked&#39;,&#39;unranked&#39;)&#xa;test_time: DATETIME" style="text;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" parent="4" vertex="1">
+          <mxGeometry y="30" width="230" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6" style="endArrow=block;endFill=1;html=1;" parent="1" source="2" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7" value="1&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;n" style="text;html=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="280" y="170" width="160" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
